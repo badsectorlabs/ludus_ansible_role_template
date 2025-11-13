@@ -1,0 +1,5 @@
+# This is a Ludus specific version number used for roles that are not hosted
+# on Ansible Galaxy. It allows Ludus to show the version of the role when
+# added directly from a its directory.
+---
+version: 1.0.0
