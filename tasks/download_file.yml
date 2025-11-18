@@ -43,7 +43,7 @@
       delegate_to: localhost
       register: file_check
 
-    - name: Chceck file checksum if file exists
+    - name: Check file checksum if file exists
       ansible.builtin.set_fact:
         existing_file_checksum_correct: "{{ file_check.stat.checksum == ludus_download_file_checksum.split(':')[1] }}"
       when: file_check.stat.exists and ludus_download_file_checksum is defined
